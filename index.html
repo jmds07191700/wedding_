@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="덕수공주와 정민장군" name="결혼식"/>
+    <title>한덕수💓박정민 결혼합니다!💍</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="img/001.svg" alt="">
+    </header>
+    <br><br>
+
+    <main>
+        <div class="page_1 fade-in">
+            <img src="img/002.svg" alt="">
+        </div>
+        <br><br><br><br>
+
+        <div class="page_2 fade-in">
+            <img src="img/003.svg" alt="">
+        </div>
+        <br><br><br><br>
+
+        <div class="page_3 fade-in">
+            <img src="img/004-1.svg" alt="">
+        </div>
+
+        <div class="page_4 fade-in">
+            <img src="img/004-2.svg" alt="">
+        </div>
+
+        <div class="page_5 fade-in">
+            <img src="img/005.svg" alt="">
+            <!-- map -->
+            <div id="daumRoughmapContainer1740560871535" class="root_daum_roughmap root_daum_roughmap_landing" style="width:90%; padding:0 5% 0 5%;"></div>
+        </div>
+
+        <div class="page_6 fade-in">
+            <img src="img/006.svg" alt="">
+        </div>
+
+        <div class="page_7 fade-in">
+            <img src="img/007" alt="">
+        </div>
+
+    </main>
+    
+</body>
+
+<script charset="UTF-8">
+    new daum.roughmap.Lander({
+        "timestamp" : "1740560871535",
+        "key" : "2n6mf",
+        "mapWidth" : "90%",
+        "mapHeight" : "50%"
+    }).render();
+   
+</script>
+
+<script>
+
+    //   fade-in
+
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const handleScroll = () => {
+  fadeElements.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+
+// Copy to clipboard function
+const copyToClipboard = (text) => {
+navigator.clipboard.writeText(text).then(() => {
+  alert(`Copied to clipboard: ${text}`);
+});
+};
+</script>
+</html>
